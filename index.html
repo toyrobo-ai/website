@@ -258,6 +258,9 @@ h2 { font-weight: 600; font-size: clamp(2.1rem, 3.7vw, 3.3rem); line-height: 1.1
   color: var(--milk); background: var(--rasp); border-radius: 999px;
 }
 .cta:hover { background: var(--rasp-deep); }
+.cta:focus-visible { outline-color: var(--key); }
+.morning .cta-note { font-size: 1rem; color: #8a4a66; margin-top: -8px; }
+.cta-note .addr { font-weight: 700; user-select: all; }
 .foot {
   position: relative; max-width: 1320px; margin: 0 auto;
   padding-block: 22px max(22px, env(safe-area-inset-bottom, 0px));
@@ -436,9 +439,8 @@ h2 { font-weight: 600; font-size: clamp(2.1rem, 3.7vw, 3.3rem); line-height: 1.1
         <p class="ask">Still here in the morning.</p>
         <h2>Come home to a hello.</h2>
         <p>It starts with a small toy that looks up when you walk in. One day, it is a robot pet that meets you at the door.</p>
-        <!-- The one thing this page still needs: a way to say yes.
-             Add your waitlist or contact link here, for example:
-             <a class="cta" href="YOUR-LINK">Tell me when it is ready</a> -->
+        <a class="cta" href="mailto:achint@toyrobo.ai?subject=Tell%20me%20when%20it%27s%20ready">Tell me when it’s ready</a>
+        <p class="cta-note">This opens an email to <span class="addr">achint@toyrobo.ai</span>.</p>
       </div>
       <div class="big-lockup" role="img" aria-label="toyrobo.ai">
         <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#mark"/></svg>
